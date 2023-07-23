@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   testmask.c                                         :+:      :+:    :+:   */
+/*   bitmask.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dhadding <daniel42.c@engineer.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/23 09:29:33 by dhadding          #+#    #+#             */
-/*   Updated: 2023/07/23 10:04:01 by dhadding         ###   ########.fr       */
+/*   Updated: 2023/07/23 10:11:11 by dhadding         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,6 @@ typedef unsigned int u32;
 
 // Define Mask Macro
 #define mask(...) ((u32)bitsetter(0, __VA_ARGS__, -1))
-
 
 INLINE u32 bitsetter(u32 result, ...) {
     va_list args;
